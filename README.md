@@ -2,6 +2,8 @@
 
 ML, Derived is an interactive guide to the mathematics behind machine learning. Connect an equation to a worked calculation, an SVG experiment, and a Python implementation.
 
+[Website](https://www.mlderived.site)
+
 ![Gradient descent with its update rule, computed loss landscape, controls, and loss history](docs/images/workspace.png)
 
 ## Explore
