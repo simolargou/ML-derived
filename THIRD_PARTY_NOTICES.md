@@ -4,7 +4,7 @@ The interface uses React and React DOM, KaTeX for mathematical typesetting, Luci
 
 The production build also writes bundled dependency notices to dist/third-party-licenses.md. Build and test tools retain their own package licenses in node_modules.
 
-These dependency licenses do not select a license for this project's own code or teaching materials. No project license has been chosen.
+ML, Derived's own code and teaching materials use the [MIT License](LICENSE), copyright © 2026 Mohammed Largou. The third-party licenses below apply separately to their respective dependencies.
 
 Educational references are linked in README.md and in the application's references page. The explanations and small datasets are teaching materials, not claimed experimental benchmarks.
 

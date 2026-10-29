@@ -23,7 +23,7 @@ npm run build -- --base=/your-repository/
 npm run preview -- --base=/your-repository/
 ```
 
-Replace `your-repository` with the actual path. Include the leading and trailing slashes, then open **http://127.0.0.1:4173/your-repository/**. The build rewrites scripts, styles, favicon, and mathematical font URLs for that prefix. Downloads are created from bundled Python source and need no separate file server. Bundled dependency notices are included as `third-party-licenses.md` in each build.
+Replace `your-repository` with the actual path. Include the leading and trailing slashes, then open **http://127.0.0.1:4173/your-repository/**. The build rewrites scripts, styles, favicon, and mathematical font URLs for that prefix. Downloads are created from bundled Python source and need no separate file server. The project license is copied from `public/LICENSE` to `dist/LICENSE`. Bundled dependency notices are included as `third-party-licenses.md` in each build.
 
 `npm run test:pages` builds to `dist-pages/` with a fixed test prefix and checks asset requests, all lesson links, resource links, refresh, sharing, and a Python download. It leaves the normal `dist/` build alone.
 
@@ -31,7 +31,7 @@ Replace `your-repository` with the actual path. Include the leading and trailing
 
 The [Pages workflow](../.github/workflows/pages.yml) runs **only through manual dispatch**. Pushing code runs CI but does not deploy.
 
-1. Choose a project license and review the files to publish. Initialize Git if needed and review the first commit before pushing.
+1. Review the files to publish, including the [MIT License](../LICENSE) and third-party notices. Initialize Git if needed and review the first commit before pushing.
 2. After creating and pushing to your chosen GitHub repository, confirm that the **Checks** workflow passes.
 3. In **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source.
 4. Review the `github-pages` environment's branch restrictions and, if desired, add a required reviewer.
@@ -43,7 +43,7 @@ Only dispatch the workflow for code you intend to publish. Once run, the deploym
 
 ## Cloudflare Pages
 
-For a site served at the domain root, the normal `npm run build` output is sufficient. Upload the entire `dist` folder through a Pages Direct Upload project in Workers & Pages. Its `index.html` must become the site's root document, with `assets` and `third-party-licenses.md` alongside it. No Worker script, database, secrets, or Python runtime is needed.
+For a site served at the domain root, the normal `npm run build` output is sufficient. Upload the entire `dist` folder through a Pages Direct Upload project in Workers & Pages. Its `index.html` must become the site's root document, with `assets`, `LICENSE`, and `third-party-licenses.md` alongside it. No Worker script, database, secrets, or Python runtime is needed.
 
 With Git integration instead, use Node 24, build command `npm run build`, and output directory `dist`. `npm ci` installs the locked dependencies locally; the Cloudflare build environment also needs access to the npm registry. Choose the project name and domain in your own account. Neither is hardcoded here.
 

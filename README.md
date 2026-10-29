@@ -99,4 +99,4 @@ Wide equations and tables scroll within their own regions. Clipboard and downloa
 
 The in-app references page links primary course materials and official library documentation. Sources and dependency licenses are recorded in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-**No project license has been selected.** The owner must choose one before presenting the project as open source. Third-party notices do not license this project's own code.
+ML, Derived is licensed under the [MIT License](LICENSE), copyright © 2026 Mohammed Largou. Third-party dependencies retain their own licenses and notices.

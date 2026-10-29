@@ -65,4 +65,4 @@ Ignore rules do not remove already tracked files. Inspect the actual index and s
 
 ## License
 
-The project owner has not selected a project license. Do not invent a copyright holder or remove third-party notices.
+The project uses the [MIT License](LICENSE). Preserve copyright and license notices, including third-party attribution. Keep [public/LICENSE](public/LICENSE) identical to the root license so static builds include the same notice.
