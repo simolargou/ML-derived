@@ -1,0 +1,517 @@
+.topbar .brand {
+  flex-shrink: 0;
+  font: 28px/1.2 var(--serif);
+  gap: 14px;
+  white-space: nowrap;
+}
+.topbar .brand-dot {
+  display: none;
+}
+.masthead-subtitle {
+  border-left: 1px solid var(--line-strong);
+  padding-left: 20px;
+  font: 14px/1.4 var(--serif);
+  color: var(--muted);
+}
+.top-search > span {
+  flex: 1;
+  font-size: 12px;
+}
+.top-search kbd {
+  font-size: 10px;
+  color: var(--quiet);
+}
+.masthead-sources {
+  width: 40px;
+  height: 40px;
+  color: var(--text);
+}
+.lesson-tabs button svg {
+  display: none;
+}
+.lesson-top > .eyebrow {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.lesson-top > .eyebrow > span + span::after {
+  content: ' /';
+  margin-left: 12px;
+}
+.symbol-trigger {
+  color: var(--accent);
+  border-bottom: 1px dotted var(--line-strong);
+  text-align: left;
+  min-height: 30px;
+  padding: 2px 0;
+}
+.symbol-trigger:hover {
+  color: var(--accent-hover);
+}
+.symbol-explanation {
+  padding: 0 26px 28px;
+  color: var(--muted);
+}
+.symbol-explanation .equation {
+  color: var(--accent);
+  font-size: 26px;
+}
+.lesson-body .gradient-guide > h2 {
+  font: 29px/1.24 var(--serif);
+  margin: 8px 0 18px;
+  letter-spacing: -0.4px;
+}
+.gradient-guide .eyebrow {
+  color: var(--muted);
+  font-size: 10px;
+}
+.gradient-guide .update-rule {
+  text-align: left;
+  padding: 10px 12px;
+  margin: 0 0 12px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  background: var(--raised);
+  transition: border-color 160ms;
+}
+.gradient-guide .update-rule::before {
+  display: none;
+}
+.gradient-guide .update-rule .equation {
+  font-size: clamp(17px, 1.7vw, 26px);
+  margin: 0;
+  color: var(--text);
+  min-height: 48px;
+  padding: 0;
+}
+.equation-terms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.equation-terms button {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  min-height: 38px;
+  border-radius: 4px;
+  padding: 4px 7px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.equation-terms button[aria-pressed='true'] {
+  background: var(--raised);
+  color: var(--text);
+}
+.equation-terms i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.equation-terms .term-alpha i {
+  background: var(--blue);
+}
+.equation-terms .term-gradient i {
+  background: var(--amber);
+}
+.term-alpha .math-inline {
+  color: var(--blue);
+}
+.term-gradient .math-inline {
+  color: var(--amber);
+}
+.gradient-guide .term-explanation {
+  font-size: 12px;
+  line-height: 1.7;
+  min-height: 50px;
+  margin: 10px 0 14px;
+}
+.learning-grid:has([data-parameter='alpha']:focus-within) .update-rule {
+  border-color: var(--blue);
+}
+.learning-grid:has([data-parameter='alpha']:focus-within) .term-alpha {
+  background: #65bce81c;
+  outline: 1px solid var(--blue);
+}
+.lesson-body .gradient-guide > h3 {
+  font: 22px/1.3 var(--serif);
+  margin: 12px 0;
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+.update-steps {
+  list-style: none;
+  counter-reset: update;
+  padding: 0;
+  margin: 0;
+}
+.update-steps li {
+  counter-increment: update;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 12px;
+  position: relative;
+  padding: 9px 0 9px 33px;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+}
+.update-steps li::before {
+  content: counter(update);
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  color: var(--text);
+  text-align: center;
+  font: 14px/21px var(--serif);
+}
+.update-steps strong {
+  font-weight: 500;
+  color: var(--text);
+}
+.update-steps span {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
+.update-code {
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  margin: 18px 0 0;
+  padding: 10px 12px 0;
+}
+.update-code > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: var(--muted);
+  gap: 8px;
+}
+.update-code button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 30px;
+}
+.update-code pre {
+  overflow: auto;
+  font: 11px/1.8 var(--mono);
+  color: var(--blue);
+  margin: 5px 0;
+}
+.update-code > p {
+  font-size: 11px;
+  color: var(--accent);
+  min-height: 4px;
+}
+.full-lesson {
+  border-top: 1px solid var(--line);
+  padding-top: 8px;
+  margin-top: 10px;
+}
+.full-lesson > summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 12px;
+  min-height: 36px;
+}
+.full-lesson[open] > summary {
+  margin-bottom: 22px;
+}
+.app[data-lesson='gradient-descent'] .lab-heading {
+  background: transparent;
+  border: 0;
+  padding-bottom: 6px;
+}
+.app[data-lesson='gradient-descent'] .lab-heading h2 {
+  font: 28px/1.3 var(--serif);
+  letter-spacing: -0.5px;
+}
+.app[data-lesson='gradient-descent'] .lab-heading svg {
+  display: none;
+}
+.app[data-lesson='gradient-descent'] .live-badge {
+  border: 0;
+  background: none;
+  padding: 0;
+  font-size: 9px;
+  color: var(--quiet);
+  display: none;
+}
+.app[data-lesson='gradient-descent'] .live-badge i {
+  display: none;
+}
+.gradient-experiment > .lab-equation {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: 11px;
+  min-height: 0;
+  margin: 0;
+  position: absolute;
+  top: 17px;
+  right: 22px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+}
+.gradient-experiment > .plot {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  margin: 0;
+}
+.gradient-experiment .plot-legend {
+  margin: 8px 0;
+  gap: 13px;
+}
+.plot-legend .line.blue {
+  border-color: var(--blue);
+}
+.gradient-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  margin: 16px 0;
+}
+.gradient-controls .button-row {
+  margin: 0;
+  gap: 7px;
+}
+.gradient-controls .button-row button {
+  padding: 9px 11px;
+  min-height: 40px;
+  font-size: 12px;
+}
+.gradient-controls .control {
+  min-width: 0;
+  margin: 0;
+}
+.gradient-controls .range-labels {
+  display: none;
+}
+.gradient-controls .control output {
+  background: var(--field);
+  color: var(--text);
+  border-color: var(--line);
+}
+.optimization-results {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 18px;
+  border-top: 1px solid var(--line);
+  align-items: center;
+}
+.optimization-results .stats-row {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 1.1fr;
+  margin: 0;
+  padding: 14px 0;
+  gap: 0;
+  border: 0;
+}
+.optimization-results .stat + .stat {
+  padding-left: 14px;
+}
+.optimization-results .stat strong {
+  font-size: 23px;
+  color: var(--text);
+}
+.optimization-results .stat:nth-child(2) strong {
+  color: var(--amber);
+}
+.optimization-results .stat.training-state strong {
+  color: var(--accent);
+  font-size: 18px;
+}
+.optimization-results .stat > span {
+  font: 9px/1.5 var(--mono);
+  letter-spacing: 0.6px;
+}
+.optimization-results .trace {
+  margin: 0;
+  font-size: 9px;
+  --trace-color: var(--accent);
+}
+.optimization-results .trace > div {
+  flex-wrap: wrap;
+  gap: 0;
+}
+.gradient-experiment > .feedback {
+  margin: 4px 0;
+  min-height: 20px;
+  font-size: 11px;
+}
+.gradient-experiment .preset-row {
+  margin: 8px 0 14px;
+}
+.app[data-lesson='gradient-descent'] .completion {
+  background: none;
+  padding: 12px 0 0;
+  margin-top: 12px;
+  border: 0;
+}
+.app[data-lesson='gradient-descent'] .completion p {
+  display: none;
+}
+.app[data-lesson='gradient-descent'] .completion button {
+  min-height: 34px;
+  font-size: 11px;
+}
+.drag-handle {
+  cursor: grab;
+  touch-action: none;
+  outline: none;
+}
+.drag-handle:active {
+  cursor: grabbing;
+}
+.drag-handle:focus-visible > :last-child {
+  stroke: var(--text);
+  stroke-width: 3;
+}
+.vector-instructions {
+  font-size: 11px;
+  color: var(--muted);
+  margin: 9px 0 15px;
+}
+.challenge {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 14px;
+  margin: 18px 0;
+}
+.challenge > summary {
+  cursor: pointer;
+  color: var(--text);
+  font-size: 13px;
+  min-height: 26px;
+}
+.challenge p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 10px;
+}
+.challenge .button-row {
+  margin: 12px 0 0;
+}
+.challenge .challenge-result {
+  color: var(--amber);
+}
+.challenge[data-complete='true'] {
+  border-color: var(--accent);
+}
+.challenge[data-complete='true'] .challenge-result {
+  color: var(--accent);
+}
+@media (max-width: 1150px) {
+  .masthead-subtitle {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .topbar .brand {
+    font-size: 24px;
+    gap: 9px;
+  }
+  .topbar .brand-mark {
+    width: 25px;
+  }
+  .topbar .topbar-right {
+    margin-left: auto;
+  }
+  .topbar .top-search {
+    min-width: 38px;
+    border: 0;
+    padding: 0;
+  }
+  .topbar .top-search > span,
+  .top-search kbd,
+  .masthead-sources {
+    display: none;
+  }
+  .topbar {
+    gap: 6px;
+  }
+  .lesson-tabs {
+    position: relative;
+  }
+  .lesson-body .gradient-guide > h2 {
+    font-size: 27px;
+  }
+  .gradient-guide .update-rule .equation {
+    font-size: 20px;
+  }
+  .gradient-controls {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+  .gradient-controls .button-row button {
+    flex: 1;
+    min-height: 44px;
+  }
+  .optimization-results {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+  .optimization-results .trace {
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+  .equation-terms button {
+    min-height: 44px;
+  }
+  .update-steps li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+  }
+  .update-code pre {
+    font-size: 10px;
+  }
+  .symbol-trigger {
+    min-height: 44px;
+  }
+}
+.optimization-results .stat:first-child strong {
+  color: var(--text);
+}
+.gradient-experiment .plot-legend .dot {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.app[data-lesson='gradient-descent'] .lab-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.app[data-lesson='gradient-descent'] .lab-footer > span:first-of-type {
+  display: none;
+}
+.app[data-lesson='gradient-descent'] .lab-footer > span {
+  font-size: 9px;
+  max-width: 260px;
+}
+.app[data-lesson='gradient-descent'] .experiment-column {
+  position: relative;
+}
+@media (max-width: 700px) {
+  .gradient-experiment > .lab-equation {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0 10px;
+    font-size: 12px;
+  }
+}

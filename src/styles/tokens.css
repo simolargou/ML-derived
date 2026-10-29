@@ -1,0 +1,54 @@
+@theme {
+  --color-ink: #edf1f5;
+  --color-teal: #65d6c3;
+  --color-paper: #0b111b;
+}
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, 'Segoe UI', Arial, sans-serif;
+  font-synthesis: none;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--text);
+  background: var(--background);
+  --background: #0b111b;
+  --surface: #121c2a;
+  --reading: #121c2a;
+  --raised: #192638;
+  --field: #0e1826;
+  --text: #edf1f5;
+  --muted: #a7b6c8;
+  --quiet: #7f94ac;
+  --accent: #65d6c3;
+  --amber: #e7b777;
+  --blue: #65bce8;
+  --danger: #f08c8c;
+  --accent-hover: #83e5d5;
+  --sidebar: #0d1521;
+  --topbar-height: 64px;
+  --line: #293b50;
+  --line-strong: #657d98;
+  --accent-wash: #173b3c;
+  --amber-wash: #342b24;
+  --shadow: 0 4px 14px #00000012;
+  --sidebar-width: 240px;
+  --radius: 10px;
+  --sans: Inter, 'Segoe UI', Arial, sans-serif;
+  --serif: Georgia, 'Times New Roman', serif;
+  --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  --plot-bg: #0c1624;
+  --plot-grid: #26384d;
+  --plot-axis: #60768e;
+  --plot-text: #b3c3d6;
+  --plot-prediction: #65d6c3;
+  --plot-target: #edf1f5;
+  --plot-error: #e7b777;
+  --plot-contour: #65bce8;
+  --plot-node: #192c3b;
+  --cluster-1: #65d6c3;
+  --cluster-2: #e7b777;
+  --cluster-3: #93b7ee;
+  --cluster-4: #c0a7e6;
+  --cluster-5: #dc9fae;
+}

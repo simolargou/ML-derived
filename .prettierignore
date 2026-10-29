@@ -1,0 +1,9 @@
+node_modules
+dist
+dist-pages
+test-results
+playwright-report
+package-lock.json
+*.py
+
+*.local

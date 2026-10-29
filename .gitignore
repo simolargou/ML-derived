@@ -1,0 +1,25 @@
+node_modules/
+dist/
+dist-pages/
+.vite/
+coverage/
+playwright-report/
+test-results/
+blob-report/
+*.tsbuildinfo
+*.log
+*.local
+.env*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local design input; the application screenshot is in docs/images/.
+/design.png
